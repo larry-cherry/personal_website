@@ -10,15 +10,17 @@
 
   <body>
     <nav>
-      <div class="nav-wrapper">
-        <%= link_to "Larry Cherry", root_path, class: "brand-logo"%>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="https://github.com/larry-cherry"><%=icon('github')%></a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
-      </div>
+      <div class="container-fluid">
+        <div class="nav-wrapper">
+          <%= link_to "Larry Cherry", root_path, class: "brand-logo"%>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="https://github.com/larry-cherry"><%=icon('github')%></a></li>
+            <li><a href="https://www.linkedin.com/in/larry-cherry/"><%=icon('linkedin')%></a></li>
+            <li><a href="collapsible.html"><%=icon('list')%></a></li>    
+          </ul> 
+        </div>
     </nav>
     <%= yield %>
+    </div>
   </body>
 </html>
