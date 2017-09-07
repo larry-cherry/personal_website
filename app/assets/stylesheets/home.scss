@@ -1,3 +1,42 @@
-// Place all the styles related to the Home controller here.
+// Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'palette';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.home {
+  .full-screen {
+     height: 100vh;
+
+    h1 {
+      text-align: center
+    }
+    ul {
+      text-align: center;
+
+      li {
+        font-size: 2em;
+        display: inline;
+        text-decoration: none;
+        
+        i {
+          color: $primary-color-text;
+        }
+        i:hover {
+          color: $accent-color;
+        }
+      }
+    }
+    img {
+      border: 5px solid $accent-color;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+    }
+    p {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 25px;
+    }
+  }
+}
