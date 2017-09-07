@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'email/', to: 'email#index', as: 'email'
+
   get 'home/index'
 
   root 'home#index'
